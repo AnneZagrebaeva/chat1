@@ -1,0 +1,116 @@
+.wrapper {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.messages {
+  height: 80vh;
+  padding: 20px;
+  background-image: url(img1.jpg);
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.message {
+  margin: 5px;
+  background-color: rgb(177, 233, 215);
+  border-radius: 5px 5px 5px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.mymessage {
+  box-sizing: border-box;
+  background-color: rgb(248, 220, 95);
+  border-radius: 5px 5px 0px 5px;
+
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+
+  width: 100px;
+}
+
+#btnSend {
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(124, 202, 202);
+  border-radius: 20%;
+}
+
+.chat {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+}
+
+.messages::-webkit-scrollbar {
+  width: 0;
+}
+
+.message-time {
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.myavatar {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url(photo_5238002910472816617_x.jpg);
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.myavamessage {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.avamessage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 500px) {
+  .messages {
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .chat {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
