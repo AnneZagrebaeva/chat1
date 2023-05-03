@@ -1,8 +1,8 @@
 let content = "";
 function sendMessage(text) {
   text = text.trim();
-  let username = localStorage.getItem("username4");
-  let photo = localStorage.getItem("photo2");
+  let username = localStorage.getItem("username5");
+  let photo = localStorage.getItem("photo3");
   let postman = new XMLHttpRequest();
   postman.open(
     "GET",
@@ -34,7 +34,7 @@ function showMessages() {
   messagesDiv.innerHTML = "";
 
   let textAccamulator = "";
-  let userName = localStorage.getItem("username4");
+  let userName = localStorage.getItem("username5");
   let msgTime;
   for (messageNumber in data) {
     msgTime = new Date(data[messageNumber].time * 1000)
@@ -97,7 +97,7 @@ function showMessages() {
 
 function setUsername() {
   //смотрим заполнено ли имя пользователя
-  let username = localStorage.getItem("username4");
+  let username = localStorage.getItem("username5");
 
   if (username != null) {
     return;
@@ -107,11 +107,11 @@ function setUsername() {
   username = prompt("Введите имя пользователя");
 
   //сохраняем введенное имя в локальное хранилище
-  localStorage.setItem("username4", username);
+  localStorage.setItem("username5", username);
 }
 
 function setPhoto() {
-  let photo = localStorage.getItem("photo2");
+  let photo = localStorage.getItem("photo3");
 
   if (photo != null) {
     return;
@@ -120,7 +120,7 @@ function setPhoto() {
   photo = prompt("Введите аватарку");
 
   //сохраняем введенное имя в локальное хранилище
-  localStorage.setItem("photo2", photo);
+  localStorage.setItem("photo3", photo);
 }
 
 setUsername();
